@@ -33,3 +33,35 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+
+// *********** CHART DEMO - CHART OBJ lab 12**************
+  // reference chart.js
+  // const ctx = document.getElementById('myChart').getContext('2d');
+  //   const myChart = new Chart(ctx, {
+  //     type: 'bar',
+  //     data: {
+  //       labels: prodNames,
+  //       datasets: [{
+  //         data: prodVotes,
+  //         label: '# of Votes',
+  //         backgroundColor: [
+  //           'green',
+  //           'blue',
+  //           'white',
+  //           'mahogany',
+  //           'black',
+  //         ],
+  //         borderColor: [
+  //           'black',
+  //         ],
+  //         borderWidth: 2
+  //       }]
+  //     },
+  //     options: {
+  //       scales: {
+  //         y: {
+  //           beginAtZero: true
+    //       }
+    //     }
+    //   }
+    // });
