@@ -1,0 +1,122 @@
+body {
+  background-color: rgba(56, 51, 14, 0.141);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(to right #701918, #f48fb1, #7e57c2);
+  font-family: 'Exo 2' sans-serif;
+  font-size: 2em;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+main {
+  display: contents;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
+#img-container {
+  grid-column: 2/1;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border-style: solid;
+  border-width: 4px;
+}
+
+p {
+  display: contents;
+  justify-content: center;
+  text-align: center;
+}
+
+
+#show-results-btn::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(234, 228, 229);
+  left: 0;
+  top: 0%;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+footer {
+  height: 100px;
+  font-size: 1.5em;
+  text-align: center;
+}  
+
+/* grid-template-areas: 
+            "header header header" <-- 3 columns>
+            "sidebar content content" <first column 3 rows>
+            "sidebar content content"
+            "sidebar content content"
+            "sidebar article article" youre only going to be a2x3 article is 2x1 sidebar 1x3
+            "footer footer footer"
+      (want header to go all the way across)
+
+** grid-auto-rows == as many rows as want within area
+grid-container div {
+      border: 2px;
+      font-size: 1.5em;
+      padding:
+
+}
+/* .grid-item1{
+      /* grid-area: sidebar*/
+      /* grid-column: 1/-1 *similar to grid column start)
+      grid column-start:1
+      grid column end:-1 */
+
+/* .grid-item2{
+      grid row-2/6 *wanted it to spand down 4 rows*
+      *
+
+.grid-item3{
+grid area content
+      grid-column: *starts at line 2/-1* 2/-1
+      grid-row: 2/5
+
+/* .grid-item4{
+
+}
+.grid-item5{
+      grid-column:1/-1;
+      grid-row:6/6 */ */
+/* 
+
+
+other way to do exact same thing WITH NUMBERS 
+each child has a line that lives on each side of wher its at
+where we tell it to start adn end is going to be based off line numbers
+      ex: have header start on line 1 end of line 4
+      .grid-item1{
+            grid-column: 1/-1 */ */ */
